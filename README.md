@@ -9,7 +9,7 @@ Issues to be addressed:
     - Does the customer want a specific seat, row or aisle or don't you mind?
     - In case of purchase of multiple tickets, the system must search first by line then by column
 
-Tests Covered
+Tests Covered:
     - Buy 01 seat
 
 Solution delivery period:

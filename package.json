@@ -1,5 +1,23 @@
 {
-  "dependencies": {
+  "name": "tr_findingseat",
+  "description": "Project's goal:",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
     "jest": "^27.3.1"
-  }
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brinfoleo/tr_findingSeat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brinfoleo/tr_findingSeat/issues"
+  },
+  "homepage": "https://github.com/brinfoleo/tr_findingSeat#readme"
 }
