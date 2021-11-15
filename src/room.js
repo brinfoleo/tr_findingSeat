@@ -5,8 +5,5 @@ const room = {
     [0, 0, 0, 0, 0]]
 };
 
-const loadRoom = () => {
-    return room;
-}
 
-module.exports = loadRoom;
+module.exports = room;
