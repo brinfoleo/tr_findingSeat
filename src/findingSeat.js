@@ -38,7 +38,7 @@ const sellSeat = (seat) => {
             }
         }
     }
-    if (room.room.seat[row][arraySeat[1]] == 0) {
+    if (checkAvailability(row, arraySeat[1])) {
         room.save(row, arraySeat[1]);
         return true;
     } else {
@@ -46,6 +46,12 @@ const sellSeat = (seat) => {
     }
 
 };
-
+const checkAvailability = (row, col) => {
+    if (room.room.seat[row][col] == 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
 
 module.exports = findingSeat;
