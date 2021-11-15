@@ -10,7 +10,7 @@ Issues to be addressed:
     - In case of purchase of multiple tickets, the system must search first by line then by column
 
 Tests Covered:
-    - Buy 01 seat
+    - Selling 01 specific seat
 
 Solution delivery period:
     11/16/2021 - 12:00
