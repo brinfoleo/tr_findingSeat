@@ -9,10 +9,8 @@ Issues to be addressed:
     - Does the customer want a specific seat, row or aisle or don't you mind?
     - In case of purchase of multiple tickets, the system must search first by line then by column
 
-Tests Covered:
-    - Selling 01 specific seat
 
 Solution delivery period:
-    11/16/2021 - 12:00
+    16.nov.2021 - 12:00
 
 Version node: 14.6.1

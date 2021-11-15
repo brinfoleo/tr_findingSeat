@@ -8,8 +8,8 @@ const findingSeat = (seat = '', quantity = 1) => {
         return false;
     }
     //Random seat
-    let row = '';
-    let col = '';
+    let row = 0;
+    let col = 0;
     if (seat.length == 0) {
         for (row = 0; row < 2; row++) {
             for (col = 0; col < 4; col++) {
@@ -67,7 +67,7 @@ const convLetter = (letter) => {
  */
 const checkAvailability = (row, col) => {
     if (room.room.seat[row] == undefined) return false;
-    
+
     if (room.room.seat[row][col] == 0) {
         return true;
     } else {
