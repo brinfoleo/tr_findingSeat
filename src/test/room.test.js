@@ -8,5 +8,5 @@ test('Creating a room in the database', () => {
         [0, 0, 0, 0, 0]]
     };
     
-    expect(createRoom()).toBe(room);
+    expect(createRoom()).toEqual(room);
   });
