@@ -1,18 +1,18 @@
-const fSeat = require("../findingSeat.js");
+const sellSeat = require("../findingSeat.js");
 
 test('Selling 01 specific seat.', () => {
-    expect(fSeat("A1")).toBe(true);
+    expect(sellSeat("A1")).toBe(true);
 });
 
 test('Selling 01 specific vacancy occupied.', () => {
-    expect(fSeat("A1")).toBe(false);
+    expect(sellSeat("A1")).toBe(false);
 });
 
 
 test('Selling 01 wrong specific vacancy.', () => {
-    expect(fSeat("H1")).toBe(false);
+    expect(sellSeat("H1")).toBe(false);
 });
 
 test('Selling seats beyond those available', () => {
-    expect(fSeat("B1", 15)).toBe(false);
+    expect(sellSeat("B1", 15)).toBe(false);
 });

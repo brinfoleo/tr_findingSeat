@@ -1,21 +1,21 @@
 const room = require("./room");
 
-
-
-const findingSeat = (seat, quantity = 1) => {
+const sellSeat = (seat, quantity = 1) => {
 
     //Checking the number of available seats
     if (quantity > room.room.freeSeat) {
         console.log("There are not enough seats available");
         return false;
     }
-    return sellSeat(seat);
+
+    return findingSeat(seat);
 
 };
 
-const sellSeat = (seat) => {
+const findingSeat = (seat) => {
     const arraySeat = [...seat];
     let row = '';
+    let col = arraySeat[1];
     for (let i = 0; i < arraySeat.length; i++) {
         if (isNaN(arraySeat[i])) {
             switch (arraySeat[i]) {
@@ -34,24 +34,27 @@ const sellSeat = (seat) => {
                     console.log("invalid letter")
                     return false;
 
-
             }
         }
     }
-    if (checkAvailability(row, arraySeat[1])) {
-        room.save(row, arraySeat[1]);
+    if (checkAvailability(row, col)) {
+        room.save(row, col);
         return true;
     } else {
         return false;
     }
 
 };
+
+/**
+ * Check if the seat is available
+ */
 const checkAvailability = (row, col) => {
     if (room.room.seat[row][col] == 0) {
         return true;
     } else {
         return false;
     }
-}
+};
 
-module.exports = findingSeat;
+module.exports = sellSeat;
